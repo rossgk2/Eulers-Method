@@ -1,1 +1,0 @@
-# Mathematics-Programming
