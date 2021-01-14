@@ -1,6 +1,6 @@
 # Euler's method
 
-This program was a personal passion project written during my junior year of high school, in 2016, a month or two before the [Integrator](https://github.com/rossgk2/Integrator) project. I was really excited about writing this program because it allowed me to approximate Euler's number, e. Euler's number is special in mathematics for many reasons. In my opinion, the most important reason is that f(x) = e^x is the unique function (up to a constant) that is its own derivative. Happily enough, this fact is highly relevant to this program!
+This program was a personal passion project written during my junior year of high school, in 2016, a month or two before the [Integrator](https://github.com/rossgk2/Integrator) project. I was really excited about writing this program because it allowed me to approximate Euler's number, e. Euler's number is special in mathematics for many reasons. In my opinion, the most important reason is that f(x) = e^x is the unique function (up to a constant) that is its own derivative. Symbolically, d/dx(e^x) = e^x. Happily enough, this fact is highly relevant to this program!
 
 ## What is Euler's method?
 
@@ -12,7 +12,8 @@ The idea of Euler's method is to use the derivative of y and the initial conditi
 
 In this program, the user specifies the "problem": they specify the g(x, y) for which dy/dx = g(x, y), the x0 and y0 for which y(x0) = y0. More interestingly, they also specify the answers they would like to recieve from the problem; that is, the user specifies the input value x at which we would like to approximate f(x), and the number of subintervals n that the interval [min(x0, x), max(x0, x)] should be divided into. (Note, specificying what both of these things are determines the step size Delta). 
 
+**Most interestingly**, since d/dx(e^x) = e^x, we can approximate e = e^1 by using g(x, y) = y and y(0) = 1. (We know y(0) = 1 because y(0) = e^0 = 1). The approximate value for e will be the second coordinate of the entry of the table whose first coordinate is 1.0.
 
 <img src = "eulers_method.PNG">
 
-As is seen in the example, the approximation gets better as the number of subintervals increases.
+We see that the approximate value for e is getting close to the true value (up to 8 decimal places) of 2.71828183. We also see that the approximation gets better as the number of subintervals increases.
