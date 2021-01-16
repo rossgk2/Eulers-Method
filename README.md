@@ -14,6 +14,6 @@ In this program, the user specifies the "problem": they specify the g(x, y) for 
 
 **Most interestingly**, since d/dx(e^x) = e^x, we can approximate e = e^1 by using g(x, y) = y and y(0) = 1. (We know y(0) = 1 because y(0) = e^0 = 1). The approximate value for e will be the second coordinate of the entry of the table whose first coordinate is 1.0.
 
-<img src = "eulers_method.PNG">
+<img src = "images/eulers_method.PNG">
 
 We see that the approximate value for e is getting close to the true value (up to 8 decimal places) of 2.71828183. We also see that the approximation gets better as the number of subintervals increases.
